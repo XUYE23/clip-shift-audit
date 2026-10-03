@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "positive_class": "known",
+  "protocol": "known-only calibration; fixed scores; held-out test",
+  "input_sha256": "78414c7be98c013a6fe3312f1190e937e603afc1d4850bf316e852558cdaa08c",
+  "n_calibration": 240,
+  "n_known": 240,
+  "n_unknown": 160,
+  "alpha": 0.05,
+  "temperature": 0.01,
+  "closed_set_accuracy": 0.9875,
+  "methods": {
+    "cosine": {
+      "threshold": 0.5604713753206259,
+      "accept_all_due_to_small_calibration": false,
+      "auroc": 0.9935416666666667,
+      "fpr_at_95_tpr": 0.0125,
+      "known_acceptance": 0.8,
+      "unknown_acceptance": 0,
+      "selective_accuracy": 0.9947916666666666
+    },
+    "msp": {
+      "threshold": 0.9999999937564823,
+      "accept_all_due_to_small_calibration": false,
+      "auroc": 0.9432291666666667,
+      "fpr_at_95_tpr": 0.3,
+      "known_acceptance": 0.925,
+      "unknown_acceptance": 0.225,
+      "selective_accuracy": 1
+    },
+    "margin": {
+      "threshold": 0.18891722090118346,
+      "accept_all_due_to_small_calibration": false,
+      "auroc": 0.9465885416666666,
+      "fpr_at_95_tpr": 0.3,
+      "known_acceptance": 0.925,
+      "unknown_acceptance": 0.225,
+      "selective_accuracy": 1
+    }
+  },
+  "seed": 23,
+  "data_note": "Synthetic normalized feature demo. No real CLIP inference or benchmark claim."
+}
